@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    font-family: Tahoma, sans-serif;
+    background-color: #fff5f7;
+    color: #333;
+
+    header {
+        background-color: #ffffff;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        header h1 {
+            color: #f70d82;
+
+            nav a {
+                text-decoration: none;
+                color: #509dca;
+                margin: 0  10px;
+
+
+                main {
+                    text-align: center;
+                    padding: 100px 20px;
+
+
+                    button {
+                        background-color: #f70d82;
+                        color: rgb(67, 163, 192);
+                        border: none;
+                        padding: 12px 25px;
+                        border-radius: 8px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
