@@ -3,22 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>فروشگاه لباس زنانه </title>
+    <title>ماه‌پوش | فروشگاه لباس زنانه</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
-    <header>
-        <h1>ماه پوش</h1>
-        <nav>
-            <a href="#">صفحه اصلی</a>
-            <a href="#">محصولات</a>
-            <a href="#">درباره ما</a>
+
+<!-- Announcement -->
+<div class="announcement">
+    ارسال رایگان برای خریدهای بالای ۲ میلیون تومان
+</div>
+
+<!-- Header -->
+<header class="header">
+
+    <div class="header-container">
+
+        <div class="logo">
+            <span>ماه‌پوش</span>
+            <small>MAHPOOSH</small>
+        </div>
+
+        <nav class="navbar" id="navbar">
+            <a href="#home">صفحه اصلی</a>
+            <a href="#categories">دسته‌بندی‌ها</a>
+            <a href="#products">محصولات</a>
+            <a href="#offers">تخفیف‌ها</a>
+            <a href="#about">درباره ما</a>
         </nav>
-    </header>
-    <main>
-        <h2>استایل خاص خودت رو پیدا کن </h2>
-        <p>جدیدترین مدل های لباس زنانه را اینجا ببین</p>
-        <button>محصولات</button>
-    </main>
-</body>
-</html>
+
+        <div class="header-icons">
+
+            <button class="icon-btn" id="searchBtn" aria-label="جستجو">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <button class="icon-btn" id="wishlistBtn" aria-label="علاقه‌مندی‌ها">
+                <i class="fa-regular fa-heart"></i>
+                <span id="wishCount">0</span>
+            </button>
+
+            <button class="icon-btn cart-button" id="cartBtn" aria-label="سبد خرید">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span id="cartCount">0</span>
+            </button>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="منو">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="search-box" id="searchBox">
+        <input type="text" id="searchInput" placeholder="نام محصول موردنظر را جستجو کنید...">
+        <button id="searchSubmit">جستجو</button>
+    </div>
+
+</header>
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <span class="hero-label">NEW COLLECTION 2026</span>
+
+        <h1>
+            زیبایی در سادگی است
+            <br>
+            <span>استایل خودت را بساز</span>
+        </h1>
+
+        <p>
+            جدیدترین ترندهای پوشاک زنانه را با ماه‌پوش تجربه کن.
+            انتخابی خاص برای روزهای خاص تو.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#products" class="btn-primary">مشاهده محصولات</a>
+            <a href="#categories" class="btn-outline">دسته‌بندی‌ها</a>
+        </div>
+
+    </div>
+
+    <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=1000"
+        alt="استایل لباس زنانه">
+    </div>
+
+</section>
+
+
+<!-- Categories -->
+<section class="categories section" id="categories">
+
+    <div class="section-title">
+        <span>انتخابی برای هر سلیقه</span>
+        <h2>دسته‌بندی محصولات</h2>
+        <p>استایل مورد علاقه‌ات را پیدا کن</p>
+    </div>
+
+    <div class="category-grid">
+
+        <a href="#products" class="category-card" data-category="coat">
+            <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=600">
+            <div class="category-overlay">
+                <h3>مانتو و پالتو</h3>
+                <span>مشاهده محصولات</span>
+            </div>
+        </a>
+
+        <a href="#products" class="category-card" data-category="dress">
+            <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=600">
+            <div class="category-overlay">
+                <h3>پیراهن و لباس</h3>
+                <span>مشاهده محصولات</span>
+            </div>
+        </a>
+
+        <a href="#products" class="category-card" data-category="set">
+            <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=600">
+            <div class="category-overlay">
+                <h3>ست و لباس روزمره</h3>
+                <span>مشاهده محصولات</span>
+            </div>
+        </a>
+       <a href="#products" class="category-card" data-category="accessory">
+            <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=600">
+            <div class="category-overlay">
+                <h3>اکسسوری</h3>
+                <span>مشاهده محصولات</span>
+            </div>
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- Products -->
+<section class="products section" id="products">
+
+    <div class="section-title">
+        <span>جدیدترین انتخاب‌ها</span>
+        <h2>محصولات پرفروش</h2>
+        <p>انتخابی خاص برای استایلی متفاوت</p>
+    </div>
+
+    <div class="product-filters">
+        <button class="filter-btn active" data-filter="all">همه محصولات</button>
+        <button class="filter-btn" data-filter="coat">مانتو</button>
+        <button class="filter-btn" data-filter="dress">پیراهن</button>
+        <button class="filter-btn" data-filter="set">ست روزمره</button>
+        <button class="filter-btn" data-filter="accessory">اکسسوری</button>
+    </div>
