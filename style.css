@@ -1,40 +1,218 @@
-body {
-    margin: 0;
-    font-family: Tahoma, sans-serif;
-    background-color: #fff5f7;
-    color: #333;
+.product-info h3 {
+    font-size: 15px;
+    margin-bottom: 8px;
+}
 
-    header {
-        background-color: #ffffff;
-        padding: 20px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    
-        header h1 {
-            color: #f70d82;
+.product-info p {
+    color: var(--primary);
+    font-weight: 700;
+    margin-bottom: 15px;
+}
 
-            nav a {
-                text-decoration: none;
-                color: #509dca;
-                margin: 0  10px;
+.product-info button {
+    width: 100%;
+    padding: 10px;
+    background: var(--dark);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: inherit;
+    cursor: pointer;
+    transition: .3s;
+}
 
+.product-info button:hover {
+    background: var(--primary);
+}
 
-                main {
-                    text-align: center;
-                    padding: 100px 20px;
+/* Special Banner */
 
+.special-banner {
+    margin: 40px 8%;
+    padding: 65px 40px;
+    background: var(--light);
+    text-align: center;
+    border-radius: 10px;
+}
 
-                    button {
-                        background-color: #f70d82;
-                        color: rgb(67, 163, 192);
-                        border: none;
-                        padding: 12px 25px;
-                        border-radius: 8px;
-                        cursor: pointer;
-                    }
-                }
-            }
-        }
+.special-banner h2 {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+.special-banner p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.special-banner a {
+    display: inline-block;
+    background: var(--primary);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 5px;
+}
+
+/* Benefits */
+
+.benefits {
+    padding-left: 8%;
+    padding-right: 8%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    text-align: center;
+    background: white;
+}
+
+.benefit {
+    padding: 20px 10px;
+}
+
+.benefit h3 {
+    color: var(--primary);
+    margin-bottom: 8px;
+}
+
+.benefit p {
+    color: #888;
+    font-size: 13px;
+}
+
+/* Footer */
+
+.footer {
+    background: var(--dark);
+    color: white;
+    padding: 60px 8% 20px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 35px;
+}
+
+.footer h2 {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.footer h3 {
+    font-size: 17px;
+    margin-bottom: 18px;
+}
+
+.footer p,
+.footer a {
+    color: #D0D0C7;
+    font-size: 13px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer a:hover {
+    color: var(--secondary);
+}
+
+.copyright {
+    border-top: 1px solid #59604F;
+    margin-top: 40px;
+    padding-top: 20px;
+    text-align: center;
+    color: #C5C8BC;
+    font-size: 12px;
+}
+
+/* Responsive */
+
+@media (max-width: 1000px) {
+    .navbar {
+        gap: 12px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+    .header {
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 15px 5%;
+    }
+
+    .navbar {
+        order: 3;
+        width: 100%;
+        overflow-x: auto;
+        padding: 5px 0;
+    }
+
+    .navbar a {
+        white-space: nowrap;
+        font-size: 12px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 35px 6%;
+        text-align: center;
+    }
+
+    .hero-image img {
+        height: 350px;
+    }
+
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .category-card {
+        height: 300px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .product-image {
+        height: 220px;
+    }
+
+    .product-info {
+        padding: 12px 8px;
+    }
+
+    .product-info h3 {
+        font-size: 12px;
+    }
+
+    .product-info button {
+        font-size: 11px;
+    }
+
+    .benefits {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .special-banner {
+        margin: 20px 5%;
+        padding: 40px 15px;
+    }
+
+    .special-banner h2 {
+        font-size: 21px;
     }
 }
