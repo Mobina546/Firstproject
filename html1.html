@@ -163,7 +163,7 @@
         <button class="filter-btn" data-filter="set">ست روزمره</button>
         <button class="filter-btn" data-filter="accessory">اکسسوری</button>
     </div>
-       <div class="product-grid" id="productGrid">
+    <div class="product-grid" id="productGrid">
 
         <article class="product-card" data-category="coat" data-name="مانتو لینن کرم">
             <div class="product-image">
@@ -275,3 +275,176 @@
     </div>
 
 </footer>
+<!-- Cart Panel -->
+<div class="cart-overlay" id="cartOverlay">
+    <div class="cart-panel">
+
+        <div class="cart-header">
+            <h3>سبد خرید من</h3>
+            <button id="closeCart" aria-label="بستن">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <div id="cartItems"></div>
+
+        <div class="cart-footer">
+            <h3>مبلغ کل: <span id="cartTotal">۰ تومان</span></h3>
+            <button id="checkoutBtn">ادامه فرایند خرید</button>
+        </div>
+
+    </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+ <article class="product-card" data-category="accessory" data-name="کیف دستی زنانه">
+            <div class="product-image">
+                <button class="favorite" aria-label="افزودن به علاقه‌مندی‌ها">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+                <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=600">
+            </div>
+            <div class="product-info">
+                <span class="product-category">اکسسوری</span>
+                <h3>کیف دستی زنانه</h3>
+                <div class="price">
+                    <strong>۸۹۰,۰۰۰ تومان</strong>
+                </div>
+                <button class="add-cart" data-name="کیف دستی زنانه" data-price="890000">
+                    افزودن به سبد خرید
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </button>
+            </div>
+        </article>
+
+    </div>
+
+    <p class="empty-message" id="emptyMessage" hidden>
+        محصولی با این مشخصات پیدا نشد.
+    </p>
+
+</section>
+
+
+<!-- Special Offer -->
+<section class="offer section" id="offers">
+
+    <div class="offer-content">
+        <span>LIMITED OFFER</span>
+        <h2>زیبایی را با قیمت بهتر تجربه کن</h2>
+        <p>منتخب محصولات با تخفیف ویژه برای مدت محدود</p>
+        <a href="#products" class="btn-primary">خرید با تخفیف</a>
+    </div>
+
+    <div class="offer-image">
+        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=700">
+    </div>
+
+</section>
+
+
+<!-- Benefits -->
+<section class="benefits section">
+
+    <div class="benefit">
+        <i class="fa-solid fa-truck-fast"></i>
+        <h3>ارسال سریع</h3>
+        <p>تحویل سفارش در کوتاه‌ترین زمان</p>
+    </div>
+
+    <div class="benefit">
+        <i class="fa-solid fa-shield-halved"></i>
+        <h3>خرید مطمئن</h3>
+        <p>تجربه خریدی امن و آسان</p>
+    </div>
+
+    <div class="benefit">
+        <i class="fa-solid fa-arrow-rotate-left"></i>
+        <h3>امکان تعویض</h3>
+        <p>شرایط تعویض مطابق قوانین فروشگاه</p>
+    </div>
+
+    <div class="benefit">
+        <i class="fa-solid fa-headset"></i>
+        <h3>پشتیبانی</h3>
+        <p>همراه شما در تمام مراحل خرید</p>
+    </div>
+
+</section>
+
+
+<!-- About -->
+<section class="about section" id="about">
+
+    <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?w=800">
+    </div>
+
+    <div class="about-content">
+        <span>ABOUT MAHPOOSH</span>
+        <h2>ماه‌پوش، همراه استایل خاص تو</h2>
+        <p>
+            ما در ماه‌پوش باور داریم که هر فرد با انتخاب لباس مناسب
+            می‌تواند سبک شخصی خودش را بسازد.
+            به همین دلیل تلاش می‌کنیم مجموعه‌ای از لباس‌های زیبا،
+            باکیفیت و متناسب با سلیقه‌های مختلف ارائه دهیم.
+        </p>
+        <a href="#products" class="btn-primary">مشاهده فروشگاه</a>
+    </div>
+
+</section>
+
+
+<!-- Testimonials -->
+<section class="testimonials section">
+
+    <div class="section-title">
+        <span>نظر مشتریان</span>
+        <h2>تجربه خرید از ماه‌پوش</h2>
+    </div>
+
+    <div class="testimonial-grid">
+        <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>کیفیت لباس واقعاً خوب بود و بسته‌بندی خیلی شیکی داشت.</p>
+            <h4>سارا محمدی</h4>
+        </div>
+
+        <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>مدل لباس‌ها خاص و متفاوت بود. از خریدم کاملاً راضی هستم.</p>
+            <h4>نگار رضایی</h4>
+        </div>
+
+        <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>ارسال سریع و پاسخگویی عالی. حتماً دوباره خرید می‌کنم.</p>
+            <h4>مریم احمدی</h4>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Newsletter -->
+<section class="newsletter">
+
+    <h2>از جدیدترین محصولات باخبر شو!</h2>
+    <p>برای اطلاع از تخفیف‌ها و کالکشن‌های جدید همراه ما باش.</p>
+
+    <form id="newsletterForm">
+        <input type="email" placeholder="آدرس ایمیل شما در سایت" required>
+        <button type="submit">عضویت</button>
+    </form>
+
+</section>
+
+
+<!-- Footer -->
+<footer class="footer">
